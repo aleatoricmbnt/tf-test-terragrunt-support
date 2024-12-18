@@ -1,3 +1,7 @@
+terraform {
+  backend "gcs" {}
+}
+
 resource "random_pet" "bucket_name" {
   length = 3
 }

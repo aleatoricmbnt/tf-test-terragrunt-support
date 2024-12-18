@@ -1,3 +1,7 @@
+terraform {
+  backend "gcs" {}
+}
+
 resource "google_service_account" "service_acc" {
   account_id   = var.service_acc_id
   display_name = var.service_acc_name
